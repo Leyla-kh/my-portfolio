@@ -1,0 +1,80 @@
+body {
+  --title-font: "Rubik Puddles", cursive;
+  --normal-font: "Gochi Hand", cursive;
+  transition: all 200ms ease-in-out;
+}
+
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.theBest {
+  font-size: 25px;
+  font-family: var(--title-font);
+}
+
+.way {
+  font-family: var(--normal-font);
+  font-size: 22px;
+  position: absolute;
+  top: 72px;
+}
+
+.learning {
+  font-family: var(--title-font);
+  font-size: 40px;
+  position: absolute;
+  top: 98px;
+}
+
+.aboutAny {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 140px;
+}
+
+.about {
+  font-family: var(--normal-font);
+  font-size: 22px;
+}
+.any {
+  font-family: var(--title-font);
+  font-size: 30px;
+}
+.thing {
+  font-family: var(--normal-font);
+  font-size: 22px;
+}
+.is {
+  font-family: var(--normal-font);
+  font-size: 22px;
+  position: absolute;
+  top: 175px;
+}
+.doing {
+  font-family: var(--title-font);
+  font-size: 40px;
+  position: absolute;
+  top: 200px;
+}
+.from {
+  font-family: "Indie Flower", cursive;
+  font-size: 18px;
+  position: absolute;
+  top: 255px;
+}
+
+.colorHover:hover {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+}
+
+.textHover:hover {
+  letter-spacing: 3px;
+}

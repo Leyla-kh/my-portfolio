@@ -1,0 +1,230 @@
+/*
+font-family: 'Aclonica', sans-serif;
+font-family: 'Concert One', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Titan One', cursive;
+*/
+body {
+  --font1: "Kaushan Script", cursive;
+  --font2: "Luckiest Guy", cursive;
+  --font3: "Titan One", cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  .quote2 {
+    display: none;
+  }
+}
+.quote2 .container {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.learn1 {
+  font-family: var(--font2);
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 20px;
+  left: 54px;
+}
+
+.letterC {
+  font-family: var(--font3);
+  font-size: 75px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.ontinuall {
+  font-family: var(--font2);
+  font-size: 30px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 45px;
+  left: 53px;
+}
+.letterY {
+  font-family: var(--font2);
+  font-size: 75px;
+  position: absolute;
+  top: 30px;
+  right: 12px;
+}
+.there {
+  font-family: var(--font1);
+  font-size: 20px;
+  position: absolute;
+  top: 73px;
+  right: 58px;
+}
+.always {
+  font-family: var(--font1);
+  font-size: 20px;
+  position: absolute;
+  top: 89px;
+  right: 52px;
+}
+
+.one {
+  font-family: var(--font2);
+  font-size: 25px;
+  position: absolute;
+  top: 115px;
+  left: 118px;
+  -webkit-transform: rotate(-92deg);
+}
+.more {
+  font-family: var(--font2);
+  font-size: 49px;
+  position: absolute;
+  top: 105px;
+  right: 0;
+}
+.quote2 .thing {
+  font-family: var(--font2);
+  font-size: 25px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 153px;
+  right: 0px;
+}
+.to {
+  font-family: var(--font1);
+  position: absolute;
+  top: 169px;
+  right: 0px;
+}
+.learn2 {
+  font-family: var(--font2);
+  font-size: 50px;
+  position: absolute;
+  top: 187px;
+  right: -60px;
+  z-index: 3;
+  letter-spacing: 3px;
+}
+
+.steve {
+  position: absolute;
+  bottom: 15px;
+  right: -60px;
+  font-family: "Handlee", cursive;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.shape1 {
+  width: 5px;
+  height: 5px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 180px;
+  right: 180px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+.shape2 {
+  width: 8px;
+  height: 8px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 140px;
+  right: 200px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+.shape3 {
+  width: 11px;
+  height: 11px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 100px;
+  right: 130px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+.shape4 {
+  width: 15px;
+  height: 15px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 130px;
+  right: 150px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+.shape5 {
+  width: 19px;
+  height: 19px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 70px;
+  right: 170px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+.shape6 {
+  width: 24px;
+  height: 24px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 35px;
+  right: 120px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.shape7 {
+  width: 30px;
+  height: 30px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 30px;
+  right: 47px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.quote2:hover .shape1 {
+  bottom: 93px;
+  right: 118px;
+}
+.quote2:hover .shape2 {
+  bottom: 85px;
+  right: 125px;
+}
+.quote2:hover .shape3 {
+  bottom: 72px;
+  right: 132px;
+}
+.quote2:hover .shape4 {
+  bottom: 50px;
+  right: 130px;
+}
+.quote2:hover .shape5 {
+  bottom: 25px;
+  right: 115px;
+}
+.quote2:hover .shape6 {
+  bottom: 10px;
+  right: 85px;
+}
+.quote2:hover .shape7 {
+  bottom: 20px;
+  right: 50px;
+}
+.grid {
+  width: 80px;
+  height: 80px;
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 100p;
+}
