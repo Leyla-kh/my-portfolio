@@ -53,7 +53,7 @@ const Work1 = styled.div`
   max-width: 300px;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 210px;
+  margin-top: 180px;
   @media only screen and (max-width: 768px) {
     height: 90%;
     width: 80%;
@@ -68,7 +68,7 @@ const Work2 = styled.div`
   height: fit-content;
   width: fit-content;
   padding: 10px;
-  margin-top: 115px;
+  margin-top: 95px;
   border-radius: 10px;
   @media only screen and (max-width: 768px) {
     height: 90%;
@@ -96,6 +96,36 @@ const Work3 = styled.div`
     display: flex;
   }
 `;
+const Logos = styled.div`
+  display: flex;
+  gap: 5px;
+`;
+const Links = styled.a`
+  text-decoration: none;
+`;
+const GitLogo = styled.img`
+  background-color: #fcbb59;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  padding: 3px;
+`;
+const DemoLogo = styled.div`
+  color: #fcbb59;
+  background-color: black;
+  width: 27px;
+  height: 27px;
+  border-radius: 50px;
+
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border: 3px solid #fcbb59;
+`;
 
 const Image = styled.img`
   height: 220px;
@@ -110,7 +140,12 @@ const Image = styled.img`
     margin: 0 auto;
   }
 `;
-
+const TopPart = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+`;
 const Title = styled.h2`
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -155,8 +190,24 @@ export default function Projects() {
         <Right>
           <Work1>
             <Image src="./img/flapy.JPG" />
-            <About>
+            <TopPart>
               <Title>Flapy Bird</Title>
+              <Logos>
+                <Links
+                  href="https://github.com/Leyla-kh/Flappy-Bird"
+                  target="_blank"
+                >
+                  <GitLogo src="./img/GitHub.png" />
+                </Links>
+                <Links
+                  href="https://mini-flapy-bird.netlify.app/"
+                  target="_blank"
+                >
+                  <DemoLogo>DEMO</DemoLogo>
+                </Links>
+              </Logos>
+            </TopPart>
+            <About>
               <Desc>
                 A clone of Flapy Bird , The game is a side-scroller where the
                 player controls a bird, attempting to fly between rows of green
@@ -172,8 +223,24 @@ export default function Projects() {
 
           <Work2>
             <Image src="./img/e-commerc-4.jpg" />
-            <About>
+            <TopPart>
               <Title>MYSTORE</Title>
+              <Logos>
+                <Links
+                  href="https://github.com/Leyla-kh/Flappy-Bird"
+                  target="_blank"
+                >
+                  <GitLogo src="./img/GitHub.png" />
+                </Links>
+                <Links
+                  href="https://e-commerc-zm9y.onrender.com"
+                  target="_blank"
+                >
+                  <DemoLogo>DEMO</DemoLogo>
+                </Links>
+              </Logos>
+            </TopPart>
+            <About>
               <Desc>
                 An online store that users can :<br />
                 Browse through categories , Filter products by type or price ,
@@ -189,8 +256,24 @@ export default function Projects() {
 
           <Work3>
             <Image src="./img/social.png" />
+            <TopPart>
+              <Title>Friends</Title>
+              <Logos>
+                <Links
+                  href="https://github.com/Leyla-kh/Flappy-Bird"
+                  target="_blank"
+                >
+                  <GitLogo src="./img/GitHub.png" />
+                </Links>
+                <Links
+                  href="https://my-social-app-cso6.onrender.com"
+                  target="_blank"
+                >
+                  <DemoLogo>DEMO</DemoLogo>
+                </Links>
+              </Logos>
+            </TopPart>
             <About>
-              <Title>Friends - Social Media</Title>
               <Desc>
                 A social media application that users can :<br /> create an
                 account , make posts , like posts and write comments , follow
