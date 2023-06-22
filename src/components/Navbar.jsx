@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Section = styled.section`
   display: flex;
   justify-content: center;
+  background-color: #333533;
 `;
 const Container = styled.div`
   width: 80%;
@@ -23,7 +24,7 @@ const Items = styled.div`
 const Logo = styled.img`
   width: 30px;
   margin-right: 5px;
-  border: 1px solid white;
+  border: 3px solid #e8eddf;
   border-radius: 50px;
   padding: 5px;
   @media only screen and (max-width: 768px) {
@@ -33,6 +34,7 @@ const Logo = styled.img`
 const Title = styled.h1`
   font-weight: 300;
   font-size: 15px;
+  color: #e8eddf;
   font-family: "Mogra", cursive;
   @media only screen and (max-width: 768px) {
     display: none;
@@ -54,7 +56,7 @@ const Link = styled.a`
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
   font-size: 14px;
-  color: white;
+  color: #e8eddf;
   text-decoration: none;
   @media only screen and (max-width: 768px) {
     font-size: 10px;

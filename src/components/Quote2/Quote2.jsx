@@ -6,9 +6,7 @@ export default function Quote2() {
       <div className="container">
         <h1 className="learn1">LEARN</h1>
 
-        <h1 className="letterC">C</h1>
-        <h1 className="ontinuall">ontinuall</h1>
-        <h1 className="letterY">y</h1>
+        <h1 className="continuall">continually</h1>
 
         <h1 className="there">There's</h1>
         <h1 className="always">always</h1>

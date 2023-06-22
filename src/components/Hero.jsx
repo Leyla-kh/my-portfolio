@@ -6,12 +6,13 @@ import { Canvas } from "@react-three/fiber";
 
 const Section = styled.section`
   height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+  background-color: #ccc5b9;
 `;
 
 const Container = styled.div`
   height: 100%;
-  width: 80%;
+  width: 90%;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
@@ -29,8 +30,9 @@ const Left = styled.div`
 `;
 
 const Hello = styled.h2`
-  font-family: "Roboto", cursive;
-  font-size: 55px;
+  font-family: "Concert One", cursive;
+  font-size: 40px;
+  color: #333533;
   @media only screen and (max-width: 768px) {
     font-size: 25px;
   }
@@ -44,33 +46,27 @@ const Title = styled.div`
 `;
 
 const Span = styled.h2`
-  font-size: 45px;
-  font-family: "Roboto", cursive;
+  font-size: 40px;
+  font-family: "Concert One", cursive;
+  color: #333533;
   @media only screen and (max-width: 768px) {
     font-size: 30px;
   }
 `;
 
 const Name = styled.h1`
-  font-family: "DynaPuff", cursive;
-  font-size: 51px;
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  @media only screen and (max-width: 768px) {
-    font-size: 35px;
-  }
+  font-family: "Abril Fatface", cursive;
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #242423;
 `;
 
 const SubTitle = styled.h2`
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 23px;
   letter-spacing: 3px;
-  font-weight: 300;
+  font-weight: 500;
+  color: #333533;
   @media only screen and (max-width: 768px) {
     font-size: 14px;
     letter-spacing: 2px;
@@ -122,19 +118,19 @@ export default function Hero() {
           <SubTitle>A Web Developer based in Iran</SubTitle>
         </Left>
         <Right>
-          <Canvas width="500" height="500">
+          {/*<Canvas width="500" height="500">
             <OrbitControls />
             <ambientLight intensity={1} />
             <directionalLight position={[2, 2, 1]} />
             <Sphere args={[1, 100, 200]} scale={2.1}>
               <MeshDistortMaterial
-                color="#911f5b"
+                color="#333533"
                 attach="material"
                 distort={0.45}
                 speed={2}
               />
             </Sphere>
-          </Canvas>
+  </Canvas>*/}
           <Img src="./img/hero2.png" />
         </Right>
       </Container>

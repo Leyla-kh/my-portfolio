@@ -5,15 +5,18 @@ import Quote2 from "./Quote2/Quote2";
 
 const Section = styled.section`
   height: 100vh;
-  scroll-snap-align: center;
-  padding-top: 30px;
+  width: 100%;
+  scroll-snap-align: start;
+  background-color: #333533;
 `;
 const Container = styled.div`
+  width: 100%;
+
   height: 100vh;
-  width: 80%;
   display: flex;
-  margin: 0 auto;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
@@ -23,27 +26,40 @@ const Container = styled.div`
 `;
 const Left = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 100px;
+
   @media only screen and (max-width: 768px) {
     margin-top: 80px;
     align-items: center;
     margin-left: 10px;
   }
 `;
-const Right = styled.div`
+const LeftLine = styled.div`
+  width: 80%;
+  height: 3px;
+  background-color: #f5cb5c;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  left: 0;
+  bottom: 215px;
+`;
+const RightLine = styled.div`
+  width: 30%;
+  height: 3px;
+  background-color: #cfdbd5;
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+`;
+const Right = styled.div`
   @media only screen and (max-width: 768px) {
   }
 `;
-
+const TextWrapper = styled.div`
+  position: absolute;
+  left: 5px;
+`;
 const Desc = styled.p`
   text-align: justify;
-  width: 400px;
-  position: absolute;
-  right: -40px;
-  bottom: -180px;
   font-family: "Poppins", sans-serif;
   @media only screen and (max-width: 768px) {
     right: 0px;
@@ -53,20 +69,19 @@ const Desc = styled.p`
 `;
 
 const SkillContainer = styled.div`
-  transform: rotate(-20deg);
-  margin-left: 15px;
+  display: flex;
+  gap: 5px;
   @media only screen and (max-width: 768px) {
     margin-bottom: 5px;
     display: flex;
-    transform: rotate(0deg);
     margin-left: 0px;
   }
 `;
 
 const Skill = styled.div`
-  background-color: #38363a;
-  height: 95px;
-  width: 115px;
+  background-color: #cfdbd5;
+  height: 90px;
+  width: 80px;
   padding: 5px;
   border-radius: 10px;
   display: flex;
@@ -74,7 +89,7 @@ const Skill = styled.div`
   gap: 5px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
+
   @media only screen and (max-width: 768px) {
     height: 60px;
     width: 70px;
@@ -95,7 +110,7 @@ const ProgressBar = styled.div`
 const DarkLine = styled.div`
   height: 6px;
   width: 68px;
-  background-color: #252525;
+  background-color: #838583;
   border-radius: 50px;
   @media only screen and (max-width: 768px) {
     width: 50px;
@@ -104,7 +119,7 @@ const DarkLine = styled.div`
 const ColoredLine = styled.div`
   height: 6px;
   width: 48px;
-  background-color: #4311cc;
+  background-color: #001b03;
   position: absolute;
   left: 0;
   top: 0;
@@ -144,6 +159,17 @@ export default function Skills() {
   return (
     <Section id="Skills">
       <Container>
+        <TextWrapper>
+          <Quote2 />
+        </TextWrapper>
+        <LeftLine />
+        <RightLine />
+        <Right>
+          <Desc>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            soluta mollitia quo eos ad ipsam esse rerum molestiae aliquam nisi!
+          </Desc>
+        </Right>
         <motion.div
           initial={"offscreen"}
           whileInView={"onscreen"}
@@ -158,33 +184,14 @@ export default function Skills() {
                 <SkillItem w={"50px"} image={"./img/html-5.png"} />
                 <SkillItem w={"50px"} image={"./img/css-3.png"} />
                 <SkillItem w={"40px"} image={"./img/bootstrap.svg"} />
-              </SkillContainer>
-            </motion.div>
-            <motion.div
-              viewport={({ once: false }, { amount: 0.5 })}
-              variants={BoxAnimation}
-            >
-              <SkillContainer>
                 <SkillItem w={"45px"} image={"./img/java-script.png"} />
                 <SkillItem w={"50px"} image={"./img/structure.png"} />
                 <SkillItem w={"45px"} image={"./img/GitHub.png"} />
-              </SkillContainer>
-            </motion.div>
-            <motion.div
-              viewport={({ once: false }, { amount: 0.5 })}
-              variants={BoxAnimation}
-            >
-              <SkillContainer>
+
                 <SkillItem w={"45px"} image={"./img/node.png"} />
                 <SkillItem w={"45px"} image={"./img/mongodb.svg"} />
                 <SkillItem w={"45px"} image={"./img/express.png"} />
-              </SkillContainer>
-            </motion.div>
-            <motion.div
-              viewport={({ once: false }, { amount: 0.5 })}
-              variants={BoxAnimation}
-            >
-              <SkillContainer>
+
                 <SkillItem w={"55px"} image={"./img/photoshop.png"} />
                 <SkillItem w={"55px"} image={"./img/Illustrator.png"} />
                 <SkillItem w={"50px"} image={"./img/Adobe_Animate.png"} />
@@ -192,14 +199,6 @@ export default function Skills() {
             </motion.div>
           </Left>
         </motion.div>
-
-        <Right>
-          <Quote2 />
-          <Desc>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            soluta mollitia quo eos ad ipsam esse rerum molestiae aliquam nisi!
-          </Desc>
-        </Right>
       </Container>
     </Section>
   );

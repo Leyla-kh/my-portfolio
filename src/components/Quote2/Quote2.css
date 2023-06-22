@@ -8,11 +8,14 @@ font-family: 'Luckiest Guy', cursive;
 font-family: 'Titan One', cursive;
 */
 body {
-  --font1: "Kaushan Script", cursive;
-  --font2: "Luckiest Guy", cursive;
+  --font1: "Abril Fatface", cursive;
+  --font2: "Abril Fatface", cursive;
   --font3: "Titan One", cursive;
 }
-
+.quote2 h1 {
+  text-align: left;
+  color: #e8eddf;
+}
 @media only screen and (max-width: 768px) {
   .quote2 {
     display: none;
@@ -22,90 +25,51 @@ body {
   margin-top: 10px;
   width: 200px;
   height: 200px;
+
   position: relative;
 }
 .learn1 {
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: 20px;
   letter-spacing: 2px;
-  position: absolute;
-  top: 20px;
-  left: 54px;
+  text-align: left;
 }
 
-.letterC {
-  font-family: var(--font3);
-  font-size: 75px;
-  letter-spacing: 2px;
-  position: absolute;
-  top: 0px;
-  left: 0;
-}
-.ontinuall {
-  font-family: var(--font2);
+.continuall {
+  font-family: var(--font1);
   font-size: 30px;
   letter-spacing: 2px;
-  position: absolute;
-  top: 45px;
-  left: 53px;
 }
-.letterY {
-  font-family: var(--font2);
-  font-size: 75px;
-  position: absolute;
-  top: 30px;
-  right: 12px;
-}
+
 .there {
   font-family: var(--font1);
   font-size: 20px;
-  position: absolute;
-  top: 73px;
-  right: 58px;
 }
 .always {
   font-family: var(--font1);
   font-size: 20px;
-  position: absolute;
-  top: 89px;
-  right: 52px;
 }
 
 .one {
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: 25px;
-  position: absolute;
-  top: 115px;
-  left: 118px;
-  -webkit-transform: rotate(-92deg);
 }
 .more {
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: 49px;
-  position: absolute;
-  top: 105px;
-  right: 0;
 }
 .quote2 .thing {
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: 25px;
   letter-spacing: 2px;
-  position: absolute;
-  top: 153px;
-  right: 0px;
 }
 .to {
   font-family: var(--font1);
-  position: absolute;
-  top: 169px;
-  right: 0px;
 }
 .learn2 {
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: 50px;
-  position: absolute;
-  top: 187px;
-  right: -60px;
+
   z-index: 3;
   letter-spacing: 3px;
 }

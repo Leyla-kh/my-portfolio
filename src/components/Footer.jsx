@@ -7,7 +7,7 @@ const Section = styled.section`
   scroll-snap-align: start;
 `;
 const Container = styled.div`
-  background-color: #11012b;
+  background-color: #242423;
   height: 400px;
   width: 100%;
   display: flex;
@@ -57,7 +57,8 @@ const GitIcon = styled.img`
   width: 40px;
   display: block;
   margin: 0 auto;
-  background-color: #4c0e64;
+  background-color: #e8eddf;
+  padding: 3px;
   border-radius: 50%;
 `;
 const Name = styled.p`

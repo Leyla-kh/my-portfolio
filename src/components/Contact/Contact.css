@@ -1,16 +1,12 @@
 .contacts {
   height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 .wrapper {
   height: 100vh;
-  width: 80%;
+  width: 100%;
   display: flex;
-  gap: 20px;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
 }
 @media (max-width: 768px) {
   .wrapper {
@@ -20,9 +16,12 @@
 }
 
 .left {
-  background-color: #210d29;
+  flex: 1;
+  background-color: #e8eddf;
+  padding: 50px 30px;
+}
+.formBox {
   padding: 30px;
-  width: 100%;
   border-radius: 10px;
 }
 @media (max-width: 768px) {
@@ -32,14 +31,30 @@
 }
 
 .right {
+  flex: 1;
+  background-color: #f5cb5c;
   width: 100%;
+  padding: 100px 50px 0 0;
+
   position: relative;
+  text-align: end;
 }
 @media (max-width: 768px) {
   .right {
     width: 90%;
     height: 90%;
   }
+}
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Alfa Slab One', cursive;
+ */
+
+.right h1 {
+  font-size: 100px;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 2px;
+  color: #242423;
 }
 
 form {
@@ -53,6 +68,7 @@ form {
 }
 
 .title {
+  color: #242423;
 }
 
 .inputItem {
@@ -65,30 +81,40 @@ input {
   margin: 0 auto;
   width: 90%;
   padding: 15px;
-  background-color: #210d29;
-  border: 1px solid #441c55;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  color: white;
+  border: none;
+  border-bottom: 2px solid #242423;
+  margin-bottom: 30px;
+  color: #333533;
   font-size: 17px;
   z-index: 99;
+  background-color: #e8eddf;
+}
+input:focus {
+  outline: none;
 }
 
 input:focus ~ span {
-  transform: translateX(5px) translateY(-22px);
+  transform: translateY(-35px);
   font-size: 13px;
+  background-color: #333533;
+  border-radius: 5px;
+  color: #e8eddf;
 }
 input:valid ~ span {
-  transform: translateX(5px) translateY(-22px);
+  transform: translateY(-35px);
   font-size: 13px;
+  background-color: #333533;
+  border-radius: 5px;
+  color: #e8eddf;
 }
 
 form span {
-  background-color: #210d29;
+  background-color: #e8eddf;
+  color: #333533;
   position: absolute;
   top: 4px;
   left: 12px;
-  padding: 0 10px;
+  padding: 5px 10px;
   margin: 10px 0;
   transition: all 400ms ease;
   pointer-events: none;
@@ -97,18 +123,23 @@ form span {
 textarea {
   width: 90%;
   padding: 15px;
-  background-color: #210d29;
-  border: 1px solid #441c55;
+  background-color: #e8eddf;
+  border: 2px solid #242423;
   border-radius: 5px;
-  color: white;
+  color: #242423;
   font-size: 17px;
 }
 button {
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   border: none;
   width: 97%;
   margin: 20px 0;
+  color: #e8eddf;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: #333533;
 }
 
 .emailIcon {

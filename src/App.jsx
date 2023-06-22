@@ -8,12 +8,6 @@ import Footer from "./components/Footer";
 const Container = styled.div`
   color: white;
   background-color: #010e55;
-  background-image: linear-gradient(
-    315deg,
-    #010935 0%,
-    #3b193a 46%,
-    #3b2353 100%
-  );
 `;
 
 function App() {
