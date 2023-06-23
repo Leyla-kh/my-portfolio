@@ -1,6 +1,6 @@
 body {
-  --title-font: "Rubik Puddles", cursive;
-  --normal-font: "Gochi Hand", cursive;
+  --title-font: "Abril Fatface", cursive;
+  --normal-font: "Abril Fatface", cursive;
   transition: all 200ms ease-in-out;
 }
 
@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  color: #333533;
 }
 
 .theBest {
@@ -71,7 +72,7 @@ body {
 
 .colorHover:hover {
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    0 0 40px #ffa500, 0 0 60px #ff0000a4, 0 0 10px #ff8d00, 0 0 98px #ff00009c;
   color: #fff6a9;
 }
 

@@ -50,22 +50,18 @@ export default function Contact() {
                 {loading ? <div class="custom-loader"></div> : "Send"}
               </button>
             </form>
+            {success && (
+              <div className="ThanksBox">
+                Dear <span className="senderName">{form.current[0].value}</span>{" "}
+                Thanks for your contacting
+              </div>
+            )}
           </div>
         </div>
         <div className="right">
           <h1>Let's</h1>
           <h1>Connect</h1>
           <h1>With Me!</h1>
-          {/*<img
-            className={success ? "emailIcon display" : "emailIcon"}
-            src="./img/mail.svg"
-          />
-          {success && (
-            <div className="emailIconOk">
-              <img className="emailOkImg" src="./img/mail-send.svg" />
-              <span className="senderName">{form.current[0].value}</span>
-            </div>
-          )}*/}
         </div>
       </div>
     </div>

@@ -1,17 +1,4 @@
 import React from "react";
-
-/*
-font-family: 'Bad Script', cursive;
-font-family: 'Chewy', cursive;
-font-family: 'Creepster', cursive;
-font-family: 'Gloria Hallelujah', cursive;
-font-family: 'Gochi Hand', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'Knewave', cursive;
-font-family: 'Rubik Puddles', cursive;
-font-family: 'Sigmar', cursive;
-
-*/
 import "./Quote1.css";
 
 export default function Quote1() {

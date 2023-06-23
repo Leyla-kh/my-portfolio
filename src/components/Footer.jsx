@@ -91,7 +91,9 @@ export default function Projects() {
         <Line />
         <BottomPart>
           <Name> Leyla Kheiry</Name>
-          <GitIcon src="./img/GitHub.png" />
+          <a href="https://github.com/Leyla-kh" target="_blank">
+            <GitIcon src="./img/GitHub.png" />
+          </a>
           <Title> Web Developer</Title>
         </BottomPart>
       </Container>

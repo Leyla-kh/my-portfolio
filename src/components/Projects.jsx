@@ -6,7 +6,7 @@ import Quote1 from "./Quote1/Quote1";
 const Section = styled.section`
   height: 100vh;
   scroll-snap-align: start;
-  background-color: #f5cb5c;
+  background-color: #e8eddf;
 `;
 const Container = styled.div`
   display: flex;
@@ -21,6 +21,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  margin-top: 350px;
   @media only screen and (max-width: 768px) {
     display: none;
   }

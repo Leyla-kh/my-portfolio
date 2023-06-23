@@ -4,19 +4,17 @@ export default function Quote2() {
   return (
     <div className="quote2">
       <div className="container">
-        <h1 className="learn1">LEARN</h1>
+        <h1>LEARN</h1>
 
-        <h1 className="continuall">continually</h1>
+        <h1>Continually</h1>
+        <h1>There's</h1>
+        <h1>always</h1>
 
-        <h1 className="there">There's</h1>
-        <h1 className="always">always</h1>
-
-        <h1 className="one">ONe</h1>
-        <h1 className="more">MORE</h1>
-        <h1 className="thing">THING</h1>
-
-        <h1 className="to">to</h1>
-        <h1 className="learn2">LEARN</h1>
+        <h1>One</h1>
+        <h1>MORE</h1>
+        <h1>THING</h1>
+        <h1>to</h1>
+        <h2 className="learn2">LEARN</h2>
         <h3 className="steve">- Steve Jobs- </h3>
         <div className="shapes">
           <div className="grid1"></div>

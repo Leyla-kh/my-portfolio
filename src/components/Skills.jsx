@@ -24,7 +24,7 @@ const Container = styled.div`
     height: 100%;
   }
 `;
-const Left = styled.div`
+const Bottom = styled.div`
   display: flex;
   margin-bottom: 100px;
 
@@ -50,14 +50,41 @@ const RightLine = styled.div`
   right: 0;
   bottom: 80px;
 `;
-const Right = styled.div`
+const Top = styled.div`
+  display: flex;
+  gap: 40px;
   @media only screen and (max-width: 768px) {
   }
 `;
 const TextWrapper = styled.div`
-  position: absolute;
-  left: 5px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
+const TextPart = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const Bullet = styled.div`
+  padding: 20px;
+  display: flex;
+  align-items: center;
+`;
+
+const YearText = styled.h3`
+  transform: rotate(-90deg);
+  color: #cfdbd5;
+`;
+
+const Line = styled.div`
+  height: 50px;
+  width: 3px;
+  background-color: #f5cb5c;
+  border-radius: 5px;
+`;
+
 const Desc = styled.p`
   text-align: justify;
   font-family: "Poppins", sans-serif;
@@ -148,10 +175,8 @@ const BoxAnimation = {
   offscreen: { x: -70, opacity: 0 },
   onscreen: { x: 10, opacity: 1 },
   transition: {
-    duration: "1.5s",
+    duration: "0.5s",
     type: "spring",
-    stiffness: 260,
-    damping: 20,
   },
 };
 
@@ -159,25 +184,62 @@ export default function Skills() {
   return (
     <Section id="Skills">
       <Container>
-        <TextWrapper>
-          <Quote2 />
-        </TextWrapper>
         <LeftLine />
         <RightLine />
-        <Right>
-          <Desc>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            soluta mollitia quo eos ad ipsam esse rerum molestiae aliquam nisi!
-          </Desc>
-        </Right>
+        <Top>
+          <TextWrapper>
+            <TextPart>
+              <Bullet>
+                <YearText>1998</YearText>
+                <Line />
+              </Bullet>
+              <Desc>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione soluta mollitia quo eos ad ipsam esse rerum molestiae
+                aliquam nisi!Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ratione soluta mollitia quo eos ad ipsam esse rerum
+                molestiae aliquam nisi!
+              </Desc>
+            </TextPart>
+
+            <TextPart>
+              <Bullet>
+                <YearText>1998</YearText>
+                <Line />
+              </Bullet>
+              <Desc>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione soluta mollitia quo eos ad ipsam esse rerum molestiae
+                aliquam nisi!Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ratione soluta mollitia quo eos ad ipsam esse rerum
+                molestiae aliquam nisi!
+              </Desc>
+            </TextPart>
+
+            <TextPart>
+              <Bullet>
+                <YearText>1998</YearText>
+                <Line />
+              </Bullet>
+              <Desc>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione soluta mollitia quo eos ad ipsam esse rerum molestiae
+                aliquam nisi!Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ratione soluta mollitia quo eos ad ipsam esse rerum
+                molestiae aliquam nisi!
+              </Desc>
+            </TextPart>
+          </TextWrapper>
+          <Quote2 />
+        </Top>
         <motion.div
           initial={"offscreen"}
           whileInView={"onscreen"}
           transition={({ delayChildren: 0.15 }, { staggerChildren: 0.2 })}
         >
-          <Left>
+          <Bottom>
             <motion.div
-              viewport={({ once: false }, { amount: 0.5 })}
+              viewport={({ once: false }, { amount: 0.3 })}
               variants={BoxAnimation}
             >
               <SkillContainer>
@@ -187,17 +249,15 @@ export default function Skills() {
                 <SkillItem w={"45px"} image={"./img/java-script.png"} />
                 <SkillItem w={"50px"} image={"./img/structure.png"} />
                 <SkillItem w={"45px"} image={"./img/GitHub.png"} />
-
                 <SkillItem w={"45px"} image={"./img/node.png"} />
                 <SkillItem w={"45px"} image={"./img/mongodb.svg"} />
                 <SkillItem w={"45px"} image={"./img/express.png"} />
-
                 <SkillItem w={"55px"} image={"./img/photoshop.png"} />
                 <SkillItem w={"55px"} image={"./img/Illustrator.png"} />
                 <SkillItem w={"50px"} image={"./img/Adobe_Animate.png"} />
               </SkillContainer>
             </motion.div>
-          </Left>
+          </Bottom>
         </motion.div>
       </Container>
     </Section>

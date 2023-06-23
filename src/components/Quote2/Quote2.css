@@ -13,8 +13,12 @@ body {
   --font3: "Titan One", cursive;
 }
 .quote2 h1 {
-  text-align: left;
   color: #e8eddf;
+  letter-spacing: 3px;
+  font-size: 17px;
+  margin: 5px;
+  text-transform: uppercase;
+  font-family: var(--font1);
 }
 @media only screen and (max-width: 768px) {
   .quote2 {
@@ -22,65 +26,25 @@ body {
   }
 }
 .quote2 .container {
+  display: flex;
+  align-items: end;
   margin-top: 10px;
   width: 200px;
   height: 200px;
-
-  position: relative;
-}
-.learn1 {
-  font-family: var(--font1);
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-align: left;
 }
 
-.continuall {
-  font-family: var(--font1);
-  font-size: 30px;
-  letter-spacing: 2px;
-}
-
-.there {
-  font-family: var(--font1);
-  font-size: 20px;
-}
-.always {
-  font-family: var(--font1);
-  font-size: 20px;
-}
-
-.one {
-  font-family: var(--font1);
-  font-size: 25px;
-}
-.more {
-  font-family: var(--font1);
-  font-size: 49px;
-}
-.quote2 .thing {
-  font-family: var(--font1);
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-.to {
-  font-family: var(--font1);
-}
 .learn2 {
-  font-family: var(--font1);
-  font-size: 50px;
-
+  font-size: 45px;
   z-index: 3;
   letter-spacing: 3px;
+  color: #e8eddf;
 }
 
 .steve {
-  position: absolute;
-  bottom: 15px;
-  right: -60px;
   font-family: "Handlee", cursive;
   font-size: 14px;
   letter-spacing: 1px;
+  color: #e8eddf;
 }
 
 .shape1 {
@@ -92,6 +56,10 @@ body {
   right: 180px;
   border-radius: 50%;
   transition: all 200ms ease-in-out;
+}
+.shapes {
+  margin-right: 45px;
+  transform: translateY(22px);
 }
 .shape2 {
   width: 8px;
