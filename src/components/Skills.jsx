@@ -65,6 +65,7 @@ const TextWrapper = styled.div`
 const TextPart = styled.div`
   display: flex;
   align-items: center;
+  margin-left: 20px;
 `;
 
 const Bullet = styled.div`
@@ -73,13 +74,13 @@ const Bullet = styled.div`
   align-items: center;
 `;
 
-const YearText = styled.h3`
+/* const YearText = styled.h3`
   transform: rotate(-90deg);
   color: #cfdbd5;
-`;
+`; */
 
 const Line = styled.div`
-  height: 50px;
+  height: 60px;
   width: 3px;
   background-color: #f5cb5c;
   border-radius: 5px;
@@ -88,6 +89,7 @@ const Line = styled.div`
 const Desc = styled.p`
   text-align: justify;
   font-family: "Poppins", sans-serif;
+  width: 80%;
   @media only screen and (max-width: 768px) {
     right: 0px;
     top: 80px;
@@ -190,43 +192,37 @@ export default function Skills() {
           <TextWrapper>
             <TextPart>
               <Bullet>
-                <YearText>1998</YearText>
                 <Line />
               </Bullet>
               <Desc>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Ratione soluta mollitia quo eos ad ipsam esse rerum molestiae
-                aliquam nisi!Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Ratione soluta mollitia quo eos ad ipsam esse rerum
-                molestiae aliquam nisi!
+                My first cooperation with the company where I am still working,
+                was initially as a Geraphic Designer and animator. During this
+                time, I gained useful experiences in the field of working with
+                software such as Photoshop, Illustrator, Adobe Animate, ...
+                (even in 3D design such as Sketchup).
               </Desc>
             </TextPart>
 
             <TextPart>
               <Bullet>
-                <YearText>1998</YearText>
                 <Line />
               </Bullet>
               <Desc>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Ratione soluta mollitia quo eos ad ipsam esse rerum molestiae
-                aliquam nisi!Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Ratione soluta mollitia quo eos ad ipsam esse rerum
-                molestiae aliquam nisi!
+                After that, due to my interest, I went to web design and after
+                upgrading my skills such as: Html , css , bootstrap , javascript
+                , responsive design , react , api , ... , I worked as a front
+                end developer for more than a year.
               </Desc>
             </TextPart>
 
             <TextPart>
               <Bullet>
-                <YearText>1998</YearText>
                 <Line />
               </Bullet>
               <Desc>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Ratione soluta mollitia quo eos ad ipsam esse rerum molestiae
-                aliquam nisi!Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Ratione soluta mollitia quo eos ad ipsam esse rerum
-                molestiae aliquam nisi!
+                After acquiring enough skills, I started to learn backend and I
+                have been working with this company as a full stack developer
+                for more than 2 years.
               </Desc>
             </TextPart>
           </TextWrapper>

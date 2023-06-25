@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import styled from "styled-components";
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
@@ -77,6 +77,7 @@ const Right = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+
   @media only screen and (max-width: 768px) {
     height: 50%;
   }
@@ -105,6 +106,10 @@ const Img = styled.img`
 `;
 
 export default function Hero() {
+  /* const [color, setColor] = useState("#8EAC50");
+  setInterval(() => {
+    setColor("#" + Math.floor(Math.random() * 16777215).toString(16));
+  }, 2000); */
   return (
     <Section>
       <Navbar />
@@ -118,19 +123,19 @@ export default function Hero() {
           <SubTitle>A Web Developer based in Iran</SubTitle>
         </Left>
         <Right>
-          {/*<Canvas width="500" height="500">
+          <Canvas width="500" height="500">
             <OrbitControls />
             <ambientLight intensity={1} />
             <directionalLight position={[2, 2, 1]} />
             <Sphere args={[1, 100, 200]} scale={2.1}>
               <MeshDistortMaterial
-                color="#333533"
+                color="#213363"
                 attach="material"
                 distort={0.45}
                 speed={2}
               />
             </Sphere>
-  </Canvas>*/}
+          </Canvas>
           <Img src="./img/hero2.png" />
         </Right>
       </Container>
