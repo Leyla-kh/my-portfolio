@@ -25,6 +25,9 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     display: none;
   }
+  @media only screen and (min-width: 129px) {
+    margin-top: 500px;
+  }
 `;
 
 const Right = styled.div`
@@ -40,6 +43,69 @@ const Right = styled.div`
   }
 `;
 
+const Work1 = styled.div`
+  background-color: #403d39;
+  height: 12.4rem;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  gap: 10px;
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+  }
+  @media only screen and (min-width: 1290px) {
+    height: 15.5rem;
+  }
+`;
+
+const Work2 = styled.div`
+  background-color: #403d39;
+  height: 12.4rem;
+  width: 75%;
+  margin-left: 100px;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  gap: 10px;
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    margin-left: 0px;
+  }
+  @media only screen and (min-width: 1290px) {
+    height: 15.5rem;
+  }
+`;
+
+const Work3 = styled.div`
+  background-color: #403d39;
+  height: 12.4rem;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  gap: 10px;
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+  }
+  @media only screen and (max-width: 768px) {
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+  }
+  @media only screen and (min-width: 1290px) {
+    height: 15.5rem;
+  }
+`;
 const About = styled.div`
   flex: 3;
   display: flex;
@@ -48,59 +114,6 @@ const About = styled.div`
   @media only screen and (max-width: 768px) {
     width: 80%;
     margin-left: 5px;
-  }
-`;
-
-const Work1 = styled.div`
-  background-color: #403d39;
-  height: 12.5rem;
-  width: 60%;
-  padding: 10px;
-  border-radius: 10px 0 0 10px;
-  display: flex;
-  gap: 10px;
-  @media only screen and (max-width: 768px) {
-    height: 90%;
-    width: 80%;
-    position: relative;
-    margin-top: 10px;
-    display: flex;
-  }
-`;
-
-const Work2 = styled.div`
-  background-color: #403d39;
-  height: 12.5rem;
-  width: 75%;
-  margin-left: 100px;
-  padding: 10px;
-  border-radius: 10px 0 0 10px;
-  display: flex;
-  gap: 10px;
-  @media only screen and (max-width: 768px) {
-    height: 90%;
-    width: 80%;
-    position: relative;
-    margin-top: 0px;
-    display: flex;
-  }
-`;
-
-const Work3 = styled.div`
-  background-color: #403d39;
-  height: 12.5rem;
-  width: 90%;
-  padding: 10px;
-  border-radius: 10px 0 0 10px;
-  display: flex;
-  gap: 10px;
-
-  @media only screen and (max-width: 768px) {
-    height: 90%;
-    width: 80%;
-    position: relative;
-    margin-top: 0px;
-    display: flex;
   }
 `;
 const Logos = styled.div`
@@ -123,7 +136,6 @@ const DemoLogo = styled.div`
   width: 27px;
   height: 27px;
   border-radius: 50px;
-
   padding: 5px;
   display: flex;
   align-items: center;
@@ -146,6 +158,12 @@ const Image = styled.img`
   @media only screen and (max-width: 768px) {
     height: 170px;
     width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 576px) {
+    min-width: 150px;
+    max-width: 150px;
     display: block;
     margin: 0 auto;
   }
@@ -172,6 +190,9 @@ const Desc = styled.p`
   color: gray;
   @media only screen and (max-width: 768px) {
     font-size: 12px;
+  }
+  @media only screen and (min-width: 1290px) {
+    font-size: 16px;
   }
 `;
 const Details = styled.div``;
@@ -276,7 +297,6 @@ export default function Projects() {
               </Details>
             </About>
           </Work2>
-
           <Work1>
             <Image src="./img/flapy.JPG" />
 

@@ -59,6 +59,9 @@ const Name = styled.h1`
   font-size: 60px;
   letter-spacing: 2px;
   color: #242423;
+  @media only screen and (max-width: 576px) {
+    font-size: 40px;
+  }
 `;
 
 const SubTitle = styled.h2`

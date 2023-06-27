@@ -11,7 +11,6 @@ const Section = styled.section`
 `;
 const Container = styled.div`
   width: 100%;
-
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,15 +18,17 @@ const Container = styled.div`
   justify-content: space-between;
   position: relative;
   @media only screen and (max-width: 768px) {
-    flex-direction: column;
     justify-content: center;
     height: 100%;
   }
 `;
 const Bottom = styled.div`
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 
+  @media only screen and (min-width: 1290px) {
+    margin-bottom: 120px;
+  }
   @media only screen and (max-width: 768px) {
     margin-top: 80px;
     align-items: center;
@@ -39,16 +40,25 @@ const LeftLine = styled.div`
   height: 3px;
   background-color: #f5cb5c;
   position: absolute;
-  left: 0;
-  bottom: 215px;
+  bottom: 220px;
+  margin-left: 70px;
+  @media only screen and (min-width: 1290px) {
+    bottom: 270px;
+  }
+  @media only screen and (max-width: 576px) {
+    bottom: 320px;
+    margin-left: 30px;
+  }
 `;
 const RightLine = styled.div`
   width: 30%;
   height: 3px;
   background-color: #cfdbd5;
-  position: absolute;
-  right: 0;
-  bottom: 80px;
+  margin: auto;
+  @media only screen and (max-width: 576px) {
+    position: absolute;
+    top: 300px;
+  }
 `;
 const Top = styled.div`
   display: flex;
@@ -66,6 +76,10 @@ const TextPart = styled.div`
   display: flex;
   align-items: center;
   margin-left: 20px;
+  @media only screen and (max-width: 576px) {
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
 `;
 
 const Bullet = styled.div`
@@ -90,20 +104,34 @@ const Desc = styled.p`
   text-align: justify;
   font-family: "Poppins", sans-serif;
   width: 80%;
+  font-size: 15px;
+  @media only screen and (min-width: 1290px) {
+    font-size: 18px;
+  }
   @media only screen and (max-width: 768px) {
     right: 0px;
     top: 80px;
     width: 300px;
+  }
+  @media only screen and (max-width: 576px) {
+    font-size: 13px;
+    width: 85%;
   }
 `;
 
 const SkillContainer = styled.div`
   display: flex;
   gap: 5px;
+  margin-bottom: 20px;
   @media only screen and (max-width: 768px) {
     margin-bottom: 5px;
     display: flex;
     margin-left: 0px;
+  }
+  @media only screen and (max-width: 576px) {
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
   }
 `;
 
@@ -119,6 +147,9 @@ const Skill = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media only screen and (min-width: 1290px) {
+    margin: 5px;
+  }
   @media only screen and (max-width: 768px) {
     height: 60px;
     width: 70px;
@@ -186,8 +217,6 @@ export default function Skills() {
   return (
     <Section id="Skills">
       <Container>
-        <LeftLine />
-        <RightLine />
         <Top>
           <TextWrapper>
             <TextPart>
@@ -196,7 +225,7 @@ export default function Skills() {
               </Bullet>
               <Desc>
                 My first cooperation with the company where I am still working,
-                was initially as a Geraphic Designer and animator. During this
+                was initially as a Graphic Designer and animator. During this
                 time, I gained useful experiences in the field of working with
                 software such as Photoshop, Illustrator, Adobe Animate, ...
                 (even in 3D design such as Sketchup).
@@ -222,18 +251,31 @@ export default function Skills() {
               <Desc>
                 After acquiring enough skills, I started to learn backend and I
                 have been working with this company as a full stack developer
-                for more than 2 years.
+                for more than 2 years. Some of the projects I worked on: MERN
+                stack app, e-commerce , booking , real time chat app,...
+              </Desc>
+            </TextPart>
+
+            <TextPart>
+              <Bullet>
+                <Line />
+              </Bullet>
+              <Desc>
+                I am currently learning Next.js and TypeScript and I will never
+                stop learning new things
               </Desc>
             </TextPart>
           </TextWrapper>
           <Quote2 />
         </Top>
+
         <motion.div
           initial={"offscreen"}
           whileInView={"onscreen"}
           transition={({ delayChildren: 0.15 }, { staggerChildren: 0.2 })}
         >
           <Bottom>
+            <LeftLine />
             <motion.div
               viewport={({ once: false }, { amount: 0.3 })}
               variants={BoxAnimation}
@@ -252,6 +294,7 @@ export default function Skills() {
                 <SkillItem w={"55px"} image={"./img/Illustrator.png"} />
                 <SkillItem w={"50px"} image={"./img/Adobe_Animate.png"} />
               </SkillContainer>
+              <RightLine />
             </motion.div>
           </Bottom>
         </motion.div>
