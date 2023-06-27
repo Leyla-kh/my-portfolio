@@ -71,7 +71,7 @@ const SubTitle = styled.h2`
   font-weight: 500;
   color: #333533;
   @media only screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 2px;
   }
 `;
@@ -109,10 +109,8 @@ const Img = styled.img`
 `;
 
 export default function Hero() {
-  /* const [color, setColor] = useState("#8EAC50");
-  setInterval(() => {
-    setColor("#" + Math.floor(Math.random() * 16777215).toString(16));
-  }, 2000); */
+  const color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
   return (
     <Section>
       <Navbar />
@@ -132,7 +130,7 @@ export default function Hero() {
             <directionalLight position={[2, 2, 1]} />
             <Sphere args={[1, 100, 200]} scale={2.1}>
               <MeshDistortMaterial
-                color="#213363"
+                color={color}
                 attach="material"
                 distort={0.45}
                 speed={2}

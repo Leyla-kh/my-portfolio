@@ -25,7 +25,9 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     display: none;
   }
-  @media only screen and (min-width: 129px) {
+  @media only screen and (min-width: 1200px) {
+  }
+  @media only screen and (min-width: 1290px) {
     margin-top: 500px;
   }
 `;
@@ -38,8 +40,9 @@ const Right = styled.div`
   align-items: flex-end;
   justify-content: space-between;
   @media only screen and (max-width: 768px) {
+    padding-top: 20px;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
   }
 `;
 
@@ -52,7 +55,8 @@ const Work1 = styled.div`
   display: flex;
   gap: 10px;
   @media only screen and (max-width: 768px) {
-    width: 80%;
+    width: 90%;
+    border-radius: 10px;
     position: relative;
     margin-top: 10px;
     display: flex;
@@ -72,7 +76,8 @@ const Work2 = styled.div`
   display: flex;
   gap: 10px;
   @media only screen and (max-width: 768px) {
-    width: 80%;
+    width: 90%;
+    border-radius: 10px;
     position: relative;
     margin-top: 0px;
     display: flex;
@@ -93,6 +98,7 @@ const Work3 = styled.div`
   gap: 10px;
   @media only screen and (max-width: 576px) {
     width: 100%;
+    height: fit-content;
     position: relative;
     margin-top: 0px;
     display: flex;
@@ -101,6 +107,8 @@ const Work3 = styled.div`
     position: relative;
     margin-top: 0px;
     display: flex;
+    width: 90%;
+    border-radius: 10px;
   }
   @media only screen and (min-width: 1290px) {
     height: 15.5rem;
@@ -156,14 +164,14 @@ const Image = styled.img`
   padding: 5px;
   background-color: #e8eddf;
   @media only screen and (max-width: 768px) {
-    height: 170px;
-    width: 95%;
+    height: 190px;
+    width: 100%;
     display: block;
     margin: 0 auto;
   }
   @media only screen and (max-width: 576px) {
-    min-width: 150px;
-    max-width: 150px;
+    width: auto;
+    height: auto;
     display: block;
     margin: 0 auto;
   }
@@ -208,7 +216,7 @@ const Detail = styled.p`
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   @media only screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 10px;
   }
 `;
 const GitIcon = styled.img``;
@@ -248,8 +256,9 @@ export default function Projects() {
                 other friends and send message privately to them , get
                 notifications for like , comment or new message
                 <br />
-                Test account 1 : Email : <br />
-                Test account 2 : Email :
+                <b>Test account 1 </b>- Email : Ross@gmail.com , Pass : 123456{" "}
+                <br />
+                <b>Test account 2 </b>- Email : Rachel@gmail.com , Pass : 123456
               </Desc>
               <Details>
                 <Detail>java script</Detail>

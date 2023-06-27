@@ -35,14 +35,13 @@
   background-color: #f5cb5c;
   width: 100%;
   padding: 100px 50px 0 0;
-
   position: relative;
   text-align: end;
 }
 @media (max-width: 768px) {
   .right {
-    width: 90%;
     height: 90%;
+    padding: 60px 0 0 0;
   }
 }
 
@@ -51,6 +50,12 @@
   font-family: "Abril Fatface", cursive;
   letter-spacing: 2px;
   color: #242423;
+}
+@media (max-width: 768px) {
+  .right h1 {
+    font-size: 75px;
+    margin-right: 20px;
+  }
 }
 
 form {
@@ -159,9 +164,9 @@ button {
   margin: 0 auto;
   width: 50px;
   height: 24px;
-  background: radial-gradient(circle closest-side, #766df4 90%, #0000) 0% 50%,
-    radial-gradient(circle closest-side, #766df4 90%, #0000) 50% 50%,
-    radial-gradient(circle closest-side, #766df4 90%, #0000) 100% 50%;
+  background: radial-gradient(circle closest-side, #f5cb5c 90%, #0000) 0% 50%,
+    radial-gradient(circle closest-side, #f5cb5c 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, #f5cb5c 90%, #0000) 100% 50%;
   background-size: calc(100% / 3) 12px;
   background-repeat: no-repeat;
   animation: d3 1s infinite linear;

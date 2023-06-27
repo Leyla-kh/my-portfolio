@@ -24,6 +24,8 @@ const Container = styled.div`
 `;
 const Bottom = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 80px;
 
   @media only screen and (min-width: 1290px) {
@@ -31,7 +33,6 @@ const Bottom = styled.div`
   }
   @media only screen and (max-width: 768px) {
     margin-top: 80px;
-    align-items: center;
     margin-left: 10px;
   }
 `;
@@ -39,25 +40,20 @@ const LeftLine = styled.div`
   width: 80%;
   height: 3px;
   background-color: #f5cb5c;
-  position: absolute;
-  bottom: 220px;
-  margin-left: 70px;
+
   @media only screen and (min-width: 1290px) {
-    bottom: 270px;
+  }
+  @media only screen and (min-width: 992px) {
   }
   @media only screen and (max-width: 576px) {
-    bottom: 320px;
-    margin-left: 30px;
   }
 `;
 const RightLine = styled.div`
   width: 30%;
   height: 3px;
   background-color: #cfdbd5;
-  margin: auto;
+
   @media only screen and (max-width: 576px) {
-    position: absolute;
-    top: 300px;
   }
 `;
 const Top = styled.div`
@@ -70,12 +66,14 @@ const TextWrapper = styled.div`
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 `;
 const TextPart = styled.div`
   display: flex;
   align-items: center;
   margin-left: 20px;
+  @media only screen and (max-width: 768px) {
+    margin-left: 5px;
+  }
   @media only screen and (max-width: 576px) {
     margin-left: 5px;
     margin-bottom: 10px;
@@ -109,9 +107,7 @@ const Desc = styled.p`
     font-size: 18px;
   }
   @media only screen and (max-width: 768px) {
-    right: 0px;
-    top: 80px;
-    width: 300px;
+    width: 90%;
   }
   @media only screen and (max-width: 576px) {
     font-size: 13px;
@@ -122,11 +118,14 @@ const Desc = styled.p`
 const SkillContainer = styled.div`
   display: flex;
   gap: 5px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   @media only screen and (max-width: 768px) {
     margin-bottom: 5px;
     display: flex;
+    justify-content: center;
     margin-left: 0px;
+    flex-wrap: wrap;
+    width: 90%;
   }
   @media only screen and (max-width: 576px) {
     margin-bottom: 5px;
@@ -294,8 +293,8 @@ export default function Skills() {
                 <SkillItem w={"55px"} image={"./img/Illustrator.png"} />
                 <SkillItem w={"50px"} image={"./img/Adobe_Animate.png"} />
               </SkillContainer>
-              <RightLine />
             </motion.div>
+            <RightLine />
           </Bottom>
         </motion.div>
       </Container>
