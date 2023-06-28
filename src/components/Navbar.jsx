@@ -27,8 +27,11 @@ const Logo = styled.img`
   border: 3px solid #e8eddf;
   border-radius: 50px;
   padding: 5px;
-  @media only screen and (max-width: 768px) {
-    margin-left: 10px;
+
+  @media only screen and (max-width: 576px) {
+    margin-left: 5px;
+    width: 20px;
+    border: 2px solid #e8eddf;
   }
 `;
 const Title = styled.h1`
@@ -50,6 +53,10 @@ const Links = styled.ul`
     padding-right: 10px;
     gap: 20px;
   }
+  @media only screen and (max-width: 576px) {
+    padding-right: 10px;
+    gap: 5px;
+  }
 `;
 
 const Link = styled.a`
@@ -60,6 +67,9 @@ const Link = styled.a`
   text-decoration: none;
   @media only screen and (max-width: 768px) {
     font-size: 10px;
+  }
+  @media only screen and (max-width: 576px) {
+    font-size: 8px;
   }
 `;
 

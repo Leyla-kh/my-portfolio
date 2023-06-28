@@ -162,7 +162,13 @@ const Skill = styled.div`
     width: 70px;
     margin-right: 10px;
   }
+  @media only screen and (max-width: 576px) {
+    height: 50px;
+    width: 60px;
+    margin-right: 5px;
+  }
 `;
+
 const Logo = styled.img`
   width: 55px;
   @media only screen and (max-width: 768px) {
