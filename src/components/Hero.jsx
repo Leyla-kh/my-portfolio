@@ -135,7 +135,7 @@ export default function Hero() {
           <SubTitle>A Web Developer based in Iran</SubTitle>
         </Left>
         <Right>
-          {/*<Canvas width="500" height="500">
+          <Canvas width="500" height="500">
             <OrbitControls />
             <ambientLight intensity={1} />
             <directionalLight position={[2, 2, 1]} />
@@ -147,7 +147,7 @@ export default function Hero() {
                 speed={2}
               />
             </Sphere>
-  </Canvas>*/}
+          </Canvas>
           <Img src="./img/hero2.png" />
         </Right>
       </Container>
