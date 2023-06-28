@@ -35,6 +35,10 @@ const Bottom = styled.div`
     margin-top: 80px;
     margin-left: 10px;
   }
+  @media only screen and (max-width: 576px) {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
 `;
 const LeftLine = styled.div`
   width: 80%;
@@ -60,12 +64,16 @@ const Top = styled.div`
   display: flex;
   gap: 40px;
   @media only screen and (max-width: 768px) {
+    gap: 10px;
   }
 `;
 const TextWrapper = styled.div`
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 576px) {
+    margin-top: 10px;
+  }
 `;
 const TextPart = styled.div`
   display: flex;
@@ -76,7 +84,7 @@ const TextPart = styled.div`
   }
   @media only screen and (max-width: 576px) {
     margin-left: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -110,7 +118,7 @@ const Desc = styled.p`
     width: 90%;
   }
   @media only screen and (max-width: 576px) {
-    font-size: 13px;
+    font-size: 12px;
     width: 85%;
   }
 `;

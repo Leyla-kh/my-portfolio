@@ -20,13 +20,29 @@
   background-color: #e8eddf;
   padding: 50px 30px;
 }
+@media (max-width: 768px) {
+  .left {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .left {
+    padding: 5px 30px;
+  }
+}
+
 .formBox {
   padding: 30px;
   border-radius: 10px;
 }
 @media (max-width: 768px) {
-  .left {
-    padding-bottom: 15px;
+  .formBox {
+    padding: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .formBox {
+    padding: 5px;
   }
 }
 
@@ -44,6 +60,12 @@
     padding: 60px 0 0 0;
   }
 }
+@media (max-width: 576px) {
+  .right {
+    height: 90%;
+    padding: 30px 0 0 0;
+  }
+}
 
 .right h1 {
   font-size: 100px;
@@ -57,6 +79,12 @@
     margin-right: 20px;
   }
 }
+@media (max-width: 576px) {
+  .right h1 {
+    font-size: 55px;
+    margin-right: 20px;
+  }
+}
 
 form {
   width: 100%;
@@ -66,6 +94,11 @@ form {
   justify-content: center;
   gap: 20px;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 576px) {
+  form {
+    gap: 5px;
+  }
 }
 
 .title {
@@ -89,6 +122,11 @@ input {
   font-size: 17px;
   z-index: 99;
   background-color: #e8eddf;
+}
+@media (max-width: 576px) {
+  input {
+    padding: 8px;
+  }
 }
 input:focus {
   outline: none;

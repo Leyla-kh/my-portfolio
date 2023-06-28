@@ -22,13 +22,12 @@ const Container = styled.div`
 const Left = styled.div`
   flex: 1;
   margin-top: 350px;
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-  @media only screen and (min-width: 1200px) {
-  }
+
   @media only screen and (min-width: 1290px) {
     margin-top: 500px;
+  }
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -44,6 +43,11 @@ const Right = styled.div`
     align-items: center;
     gap: 20px;
   }
+  @media only screen and (max-width: 576px) {
+    padding-top: 20px;
+    align-items: center;
+    gap: 10px;
+  }
 `;
 
 const Work1 = styled.div`
@@ -54,6 +58,9 @@ const Work1 = styled.div`
   border-radius: 10px 0 0 10px;
   display: flex;
   gap: 10px;
+  @media only screen and (min-width: 1290px) {
+    height: 15.5rem;
+  }
   @media only screen and (max-width: 768px) {
     width: 90%;
     border-radius: 10px;
@@ -61,8 +68,8 @@ const Work1 = styled.div`
     margin-top: 10px;
     display: flex;
   }
-  @media only screen and (min-width: 1290px) {
-    height: 15.5rem;
+  @media only screen and (max-width: 576px) {
+    height: 11.5rem;
   }
 `;
 
@@ -75,6 +82,9 @@ const Work2 = styled.div`
   border-radius: 10px 0 0 10px;
   display: flex;
   gap: 10px;
+  @media only screen and (min-width: 1290px) {
+    height: 15.5rem;
+  }
   @media only screen and (max-width: 768px) {
     width: 90%;
     border-radius: 10px;
@@ -83,8 +93,8 @@ const Work2 = styled.div`
     display: flex;
     margin-left: 0px;
   }
-  @media only screen and (min-width: 1290px) {
-    height: 15.5rem;
+  @media only screen and (max-width: 576px) {
+    height: 11.5rem;
   }
 `;
 
@@ -96,13 +106,10 @@ const Work3 = styled.div`
   border-radius: 10px 0 0 10px;
   display: flex;
   gap: 10px;
-  @media only screen and (max-width: 576px) {
-    width: 100%;
-    height: fit-content;
-    position: relative;
-    margin-top: 0px;
-    display: flex;
+  @media only screen and (min-width: 1290px) {
+    height: 15.5rem;
   }
+
   @media only screen and (max-width: 768px) {
     position: relative;
     margin-top: 0px;
@@ -110,8 +117,11 @@ const Work3 = styled.div`
     width: 90%;
     border-radius: 10px;
   }
-  @media only screen and (min-width: 1290px) {
-    height: 15.5rem;
+  @media only screen and (max-width: 576px) {
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    height: 11.5rem;
   }
 `;
 const About = styled.div`
@@ -122,6 +132,11 @@ const About = styled.div`
   @media only screen and (max-width: 768px) {
     width: 80%;
     margin-left: 5px;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+    margin-left: 0px;
+    flex: 4;
   }
 `;
 const Logos = styled.div`
@@ -137,6 +152,10 @@ const GitLogo = styled.img`
   height: 35px;
   border-radius: 50px;
   padding: 3px;
+  @media only screen and (max-width: 576px) {
+    width: 29px;
+    height: 29px;
+  }
 `;
 const DemoLogo = styled.div`
   color: #cfdbd5;
@@ -152,6 +171,10 @@ const DemoLogo = styled.div`
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   border: 3px solid #cfdbd5;
+  @media only screen and (max-width: 576px) {
+    width: 21px;
+    height: 21px;
+  }
 `;
 
 const Image = styled.img`
@@ -170,10 +193,10 @@ const Image = styled.img`
     margin: 0 auto;
   }
   @media only screen and (max-width: 576px) {
-    width: auto;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    min-width: 150px;
+    height: 170px;
+    width: 90%;
+    flex: 1;
   }
 `;
 const TopPart = styled.div`
@@ -189,6 +212,9 @@ const Title = styled.h2`
   @media only screen and (max-width: 768px) {
     font-size: 15px;
   }
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 const Desc = styled.p`
   font-family: "Poppins", sans-serif;
@@ -196,11 +222,16 @@ const Desc = styled.p`
   text-align: justify;
   margin-bottom: 10px;
   color: gray;
+
+  @media only screen and (min-width: 1290px) {
+    font-size: 16px;
+  }
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
-  @media only screen and (min-width: 1290px) {
-    font-size: 16px;
+  @media only screen and (max-width: 576px) {
+    font-size: 10px;
+    margin-bottom: 0px;
   }
 `;
 const Details = styled.div``;
@@ -215,8 +246,14 @@ const Detail = styled.p`
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
+
   @media only screen and (max-width: 768px) {
     font-size: 10px;
+  }
+  @media only screen and (max-width: 576px) {
+    font-size: 8px;
+    padding: 3px;
+    margin-right: 3px;
   }
 `;
 const GitIcon = styled.img``;
