@@ -274,7 +274,7 @@ export default function Projects() {
                 <Title>Friends</Title>
                 <Logos>
                   <Links
-                    href="https://github.com/Leyla-kh/Flappy-Bird"
+                    href="https://github.com/Leyla-kh/my-social-app-api"
                     target="_blank"
                   >
                     <GitLogo src="./img/GitHub.png" />
@@ -316,7 +316,7 @@ export default function Projects() {
                 <Title>MYSTORE</Title>
                 <Logos>
                   <Links
-                    href="https://github.com/Leyla-kh/Flappy-Bird"
+                    href="https://github.com/Leyla-kh/mystore-api"
                     target="_blank"
                   >
                     <GitLogo src="./img/GitHub.png" />
@@ -338,7 +338,7 @@ export default function Projects() {
                 <Detail>java script</Detail>
                 <Detail>scss</Detail>
                 <Detail>redux</Detail>
-                <Detail>strapi</Detail>
+                <Detail>MongoDB</Detail>
                 <Detail>paypal payment</Detail>
               </Details>
             </About>
