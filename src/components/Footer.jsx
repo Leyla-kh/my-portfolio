@@ -26,6 +26,7 @@ const Image = styled.img`
   border: 1px solid white;
   padding: 5px;
 `;
+
 const Line = styled.hr`
   color: white;
   width: 80%;

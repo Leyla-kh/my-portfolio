@@ -27,6 +27,9 @@ const Logo = styled.img`
   border: 3px solid #e8eddf;
   border-radius: 50px;
   padding: 5px;
+  &:hover {
+    border: 3px solid #f5cb5c;
+  }
 
   @media only screen and (max-width: 576px) {
     margin-left: 5px;
@@ -39,6 +42,7 @@ const Title = styled.h1`
   font-size: 15px;
   color: #e8eddf;
   font-family: "Mogra", cursive;
+
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -65,6 +69,12 @@ const Link = styled.a`
   font-size: 14px;
   color: #e8eddf;
   text-decoration: none;
+  padding: 5px;
+  border-bottom: 1px solid #333533;
+  transition: all 300ms ease;
+  &:hover {
+    border-bottom: 1px solid #f5cb5c;
+  }
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }

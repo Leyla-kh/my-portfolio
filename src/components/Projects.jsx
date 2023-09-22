@@ -220,7 +220,7 @@ const Desc = styled.p`
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   text-align: justify;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: gray;
 
   @media only screen and (min-width: 1290px) {
@@ -245,7 +245,7 @@ const Detail = styled.p`
   margin-right: 5px;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
 
   @media only screen and (max-width: 768px) {
     font-size: 10px;

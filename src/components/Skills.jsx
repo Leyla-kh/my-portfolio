@@ -1,84 +1,68 @@
 import React from "react";
 import styled from "styled-components";
 import { delay, motion } from "framer-motion";
-import Quote2 from "./Quote2/Quote2";
 
 const Section = styled.section`
   height: 100vh;
   width: 100%;
   scroll-snap-align: start;
   background-color: #333533;
-`;
-const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
   @media only screen and (max-width: 768px) {
-    justify-content: center;
     height: 100%;
   }
 `;
-const Bottom = styled.div`
+const Container = styled.div`
+  width: 95%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 80px;
+  justify-content: center;
 
-  @media only screen and (min-width: 1290px) {
-    margin-bottom: 120px;
-  }
   @media only screen and (max-width: 768px) {
-    margin-top: 80px;
-    margin-left: 10px;
-  }
-  @media only screen and (max-width: 576px) {
-    margin-top: 0px;
-    margin-left: 10px;
-  }
-`;
-const LeftLine = styled.div`
-  width: 80%;
-  height: 3px;
-  background-color: #f5cb5c;
+    flex-direction: column;
 
-  @media only screen and (min-width: 1290px) {
-  }
-  @media only screen and (min-width: 992px) {
-  }
-  @media only screen and (max-width: 576px) {
-  }
-`;
-const RightLine = styled.div`
-  width: 30%;
-  height: 3px;
-  background-color: #cfdbd5;
-
-  @media only screen and (max-width: 576px) {
+    :nth-child(1) {
+      order: 1;
+    }
+    :nth-child(2) {
+      order: 3;
+    }
+    :nth-child(3) {
+      order: 2;
+    }
   }
 `;
-const Top = styled.div`
+const Part = styled.div`
   display: flex;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: 1290px) {
+  }
   @media only screen and (max-width: 768px) {
-    gap: 10px;
+  }
+  @media only screen and (max-width: 576px) {
   }
 `;
+
 const TextWrapper = styled.div`
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 90%;
   @media only screen and (max-width: 576px) {
     margin-top: 10px;
   }
 `;
+
 const TextPart = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  justify-content: center;
+  margin-bottom: 70px;
+  position: relative;
   @media only screen and (max-width: 768px) {
     margin-left: 5px;
   }
@@ -88,29 +72,47 @@ const TextPart = styled.div`
   }
 `;
 
-const Bullet = styled.div`
-  padding: 20px;
+const Bullet1 = styled.div`
+  position: absolute;
+  left: 40px;
+  top: -10px;
+`;
+const Bullet2 = styled.div`
+  position: absolute;
+  left: 40px;
+  top: -10px;
   display: flex;
-  align-items: center;
+  gap: 5px;
 `;
-
-/* const YearText = styled.h3`
-  transform: rotate(-90deg);
-  color: #cfdbd5;
-`; */
-
-const Line = styled.div`
-  height: 60px;
-  width: 3px;
-  background-color: #f5cb5c;
-  border-radius: 5px;
+const Bullet3 = styled.div`
+  position: absolute;
+  left: 40px;
+  top: -10px;
+  display: flex;
+  gap: 5px;
 `;
-
+const Bullet4 = styled.div`
+  position: absolute;
+  left: 40px;
+  top: -10px;
+  display: flex;
+  gap: 5px;
+`;
+const Circle = styled.div`
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: #dbd283a3;
+`;
 const Desc = styled.p`
   text-align: justify;
   font-family: "Poppins", sans-serif;
   width: 80%;
   font-size: 15px;
+  background-color: #80808036;
+  padding: 15px;
+  border-radius: 10px;
+  color: gray;
   @media only screen and (min-width: 1290px) {
     font-size: 18px;
   }
@@ -125,93 +127,50 @@ const Desc = styled.p`
 
 const SkillContainer = styled.div`
   display: flex;
-  gap: 5px;
-  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   @media only screen and (max-width: 768px) {
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    margin-left: 0px;
-    flex-wrap: wrap;
-    width: 90%;
   }
   @media only screen and (max-width: 576px) {
-    margin-bottom: 5px;
-    display: flex;
-    flex-wrap: wrap;
   }
 `;
 
 const Skill = styled.div`
-  background-color: #cfdbd5;
-  height: 90px;
-  width: 80px;
+  background-color: #b9b9b9;
   padding: 5px;
   border-radius: 10px;
+  margin: 7px;
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   @media only screen and (min-width: 1290px) {
     margin: 5px;
   }
   @media only screen and (max-width: 768px) {
-    height: 60px;
-    width: 70px;
     margin-right: 10px;
   }
   @media only screen and (max-width: 576px) {
-    height: 50px;
-    width: 60px;
     margin-right: 5px;
   }
 `;
 
 const Logo = styled.img`
-  width: 55px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
   @media only screen and (max-width: 768px) {
     width: 30px;
-  }
-`;
-const ProgressBar = styled.div`
-  position: relative;
-  @media only screen and (max-width: 768px) {
-  }
-`;
-const DarkLine = styled.div`
-  height: 6px;
-  width: 68px;
-  background-color: #838583;
-  border-radius: 50px;
-  @media only screen and (max-width: 768px) {
-    width: 50px;
-  }
-`;
-const ColoredLine = styled.div`
-  height: 6px;
-  width: 48px;
-  background-color: #001b03;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 90;
-  border-radius: 50px;
-  @media only screen and (max-width: 768px) {
-    max-width: 70%;
+    height: 30px;
   }
 `;
 
-function SkillItem({ w, image }) {
+function SkillItem({ image }) {
   return (
     <>
       <Skill>
         <Logo src={image} />
-        <ProgressBar>
-          <DarkLine />
-          <ColoredLine style={{ width: w }} />
-        </ProgressBar>
       </Skill>
     </>
   );
@@ -219,7 +178,7 @@ function SkillItem({ w, image }) {
 
 const BoxAnimation = {
   offscreen: { x: -70, opacity: 0 },
-  onscreen: { x: 10, opacity: 1 },
+  onscreen: { x: 0, opacity: 1 },
   transition: {
     duration: "0.5s",
     type: "spring",
@@ -230,12 +189,12 @@ export default function Skills() {
   return (
     <Section id="Skills">
       <Container>
-        <Top>
+        <Part>
           <TextWrapper>
             <TextPart>
-              <Bullet>
-                <Line />
-              </Bullet>
+              <Bullet1>
+                <Circle />
+              </Bullet1>
               <Desc>
                 My first cooperation with the company where I am still working,
                 was initially as a Graphic Designer and animator. During this
@@ -246,9 +205,10 @@ export default function Skills() {
             </TextPart>
 
             <TextPart>
-              <Bullet>
-                <Line />
-              </Bullet>
+              <Bullet2>
+                <Circle />
+                <Circle />
+              </Bullet2>
               <Desc>
                 After that, due to my interest, I went to web design and after
                 upgrading my skills such as: Html , css , bootstrap , javascript
@@ -256,11 +216,46 @@ export default function Skills() {
                 end developer for more than a year.
               </Desc>
             </TextPart>
-
+          </TextWrapper>
+        </Part>
+        <Part>
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            transition={({ delayChildren: 0.15 }, { staggerChildren: 0.2 })}
+          >
+            <motion.div
+              viewport={({ once: false }, { amount: 0.3 })}
+              variants={BoxAnimation}
+            >
+              <SkillContainer>
+                <SkillItem image={"./img/html-5.png"} />
+                <SkillItem image={"./img/css-3.png"} />
+                <SkillItem image={"./img/bootstrap.svg"} />
+                <SkillItem image={"./img/tailwind.svg"} />
+                <SkillItem image={"./img/java-script.png"} />
+                <SkillItem image={"./img/structure.png"} />
+                <SkillItem image={"./img/typescript.png"} />
+                <SkillItem image={"./img/next-js.svg"} />
+                <SkillItem image={"./img/node.png"} />
+                <SkillItem image={"./img/mongodb.svg"} />
+                <SkillItem image={"./img/express.png"} />
+                <SkillItem image={"./img/GitHub.png"} />
+                <SkillItem image={"./img/photoshop.png"} />
+                <SkillItem image={"./img/Illustrator.png"} />
+                <SkillItem image={"./img/Adobe_Animate.png"} />
+              </SkillContainer>
+            </motion.div>
+          </motion.div>
+        </Part>
+        <Part>
+          <TextWrapper>
             <TextPart>
-              <Bullet>
-                <Line />
-              </Bullet>
+              <Bullet3>
+                <Circle />
+                <Circle />
+                <Circle />
+              </Bullet3>
               <Desc>
                 After acquiring enough skills, I started to learn backend and I
                 have been working with this company as a full stack developer
@@ -270,47 +265,19 @@ export default function Skills() {
             </TextPart>
 
             <TextPart>
-              <Bullet>
-                <Line />
-              </Bullet>
+              <Bullet4>
+                <Circle />
+                <Circle />
+                <Circle />
+                <Circle />
+              </Bullet4>
               <Desc>
-                I am currently learning Next.js and TypeScript and I will never
-                stop learning new things
+                I am currently learning new technologies to improve my skills
+                and I will never stop learning new things
               </Desc>
             </TextPart>
           </TextWrapper>
-          <Quote2 />
-        </Top>
-
-        <motion.div
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          transition={({ delayChildren: 0.15 }, { staggerChildren: 0.2 })}
-        >
-          <Bottom>
-            <LeftLine />
-            <motion.div
-              viewport={({ once: false }, { amount: 0.3 })}
-              variants={BoxAnimation}
-            >
-              <SkillContainer>
-                <SkillItem w={"50px"} image={"./img/html-5.png"} />
-                <SkillItem w={"50px"} image={"./img/css-3.png"} />
-                <SkillItem w={"40px"} image={"./img/bootstrap.svg"} />
-                <SkillItem w={"45px"} image={"./img/java-script.png"} />
-                <SkillItem w={"50px"} image={"./img/structure.png"} />
-                <SkillItem w={"45px"} image={"./img/GitHub.png"} />
-                <SkillItem w={"45px"} image={"./img/node.png"} />
-                <SkillItem w={"45px"} image={"./img/mongodb.svg"} />
-                <SkillItem w={"45px"} image={"./img/express.png"} />
-                <SkillItem w={"55px"} image={"./img/photoshop.png"} />
-                <SkillItem w={"55px"} image={"./img/Illustrator.png"} />
-                <SkillItem w={"50px"} image={"./img/Adobe_Animate.png"} />
-              </SkillContainer>
-            </motion.div>
-            <RightLine />
-          </Bottom>
-        </motion.div>
+        </Part>
       </Container>
     </Section>
   );
