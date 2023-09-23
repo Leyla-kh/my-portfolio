@@ -33,8 +33,11 @@ const Logo = styled.img`
 
   @media only screen and (max-width: 576px) {
     margin-left: 5px;
-    width: 20px;
+    width: 25px;
     border: 2px solid #e8eddf;
+    &:hover {
+      border: 2px solid #f5cb5c;
+    }
   }
 `;
 const Title = styled.h1`
@@ -42,7 +45,6 @@ const Title = styled.h1`
   font-size: 15px;
   color: #e8eddf;
   font-family: "Mogra", cursive;
-
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -58,7 +60,6 @@ const Links = styled.ul`
     gap: 20px;
   }
   @media only screen and (max-width: 576px) {
-    padding-right: 10px;
     gap: 5px;
   }
 `;
@@ -77,9 +78,6 @@ const Link = styled.a`
   }
   @media only screen and (max-width: 768px) {
     font-size: 10px;
-  }
-  @media only screen and (max-width: 576px) {
-    font-size: 8px;
   }
 `;
 

@@ -8,13 +8,13 @@ const Section = styled.section`
   scroll-snap-align: start;
   background-color: #e8eddf;
 `;
+
 const Container = styled.div`
   display: flex;
   gap: 20px;
   padding: 10px 0;
   @media only screen and (max-width: 768px) {
     padding: 0;
-    height: 90%;
     align-items: center;
   }
 `;
@@ -39,14 +39,12 @@ const Right = styled.div`
   align-items: flex-end;
   justify-content: space-between;
   @media only screen and (max-width: 768px) {
-    padding-top: 20px;
+    padding-top: 10px;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
   }
   @media only screen and (max-width: 576px) {
     padding-top: 20px;
-    align-items: center;
-    gap: 10px;
   }
 `;
 
@@ -63,9 +61,9 @@ const Work1 = styled.div`
   }
   @media only screen and (max-width: 768px) {
     width: 90%;
+    height: fit-content;
     border-radius: 10px;
     position: relative;
-    margin-top: 10px;
     display: flex;
   }
   @media only screen and (max-width: 576px) {
@@ -87,6 +85,7 @@ const Work2 = styled.div`
   }
   @media only screen and (max-width: 768px) {
     width: 90%;
+    height: fit-content;
     border-radius: 10px;
     position: relative;
     margin-top: 0px;
@@ -116,6 +115,7 @@ const Work3 = styled.div`
     display: flex;
     width: 90%;
     border-radius: 10px;
+    height: fit-content;
   }
   @media only screen and (max-width: 576px) {
     position: relative;
@@ -136,7 +136,6 @@ const About = styled.div`
   @media only screen and (max-width: 576px) {
     width: 100%;
     margin-left: 0px;
-    flex: 4;
   }
 `;
 const Logos = styled.div`
@@ -152,9 +151,9 @@ const GitLogo = styled.img`
   height: 35px;
   border-radius: 50px;
   padding: 3px;
-  @media only screen and (max-width: 576px) {
-    width: 29px;
-    height: 29px;
+  @media only screen and (max-width: 768px) {
+    width: 25px;
+    height: 25px;
   }
 `;
 const DemoLogo = styled.div`
@@ -171,9 +170,14 @@ const DemoLogo = styled.div`
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   border: 3px solid #cfdbd5;
+  @media only screen and (max-width: 768px) {
+    width: 17px;
+    height: 17px;
+    font-size: 9px;
+  }
   @media only screen and (max-width: 576px) {
-    width: 21px;
-    height: 21px;
+    width: 16px;
+    height: 16px;
   }
 `;
 
@@ -187,16 +191,14 @@ const Image = styled.img`
   padding: 5px;
   background-color: #e8eddf;
   @media only screen and (max-width: 768px) {
-    height: 190px;
+    height: 185px;
     width: 100%;
-    display: block;
-    margin: 0 auto;
+    padding: 3px;
   }
   @media only screen and (max-width: 576px) {
     min-width: 150px;
-    height: 170px;
-    width: 90%;
-    flex: 1;
+    height: 180px;
+    width: 100%;
   }
 `;
 const TopPart = styled.div`
@@ -227,7 +229,7 @@ const Desc = styled.p`
     font-size: 16px;
   }
   @media only screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 11px;
   }
   @media only screen and (max-width: 576px) {
     font-size: 10px;
@@ -248,7 +250,8 @@ const Detail = styled.p`
   font-size: 12px;
 
   @media only screen and (max-width: 768px) {
-    font-size: 10px;
+    font-size: 9px;
+    padding: 3px;
   }
   @media only screen and (max-width: 576px) {
     font-size: 8px;
@@ -298,7 +301,6 @@ export default function Projects() {
                 <b>Test account 2 </b>- Email : Rachel@gmail.com , Pass : 123456
               </Desc>
               <Details>
-                <Detail>java script</Detail>
                 <Detail>React</Detail>
                 <Detail>Context api</Detail>
                 <Detail>Node js</Detail>

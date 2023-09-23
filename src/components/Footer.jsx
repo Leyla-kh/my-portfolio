@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { delay, motion } from "framer-motion";
 
 const Section = styled.section`
   height: 400px;
@@ -44,8 +43,8 @@ const Item = styled.a`
   text-decoration: none;
   color: white;
   @media only screen and (max-width: 768px) {
-    font-size: 14px;
-    padding: 10px 9px;
+    font-size: 13px;
+    padding: 5px 5px;
   }
 `;
 const BottomPart = styled.div`
@@ -69,6 +68,7 @@ const Name = styled.p`
   font-size: 13px;
   letter-spacing: 1.5px;
 `;
+
 const Title = styled.p`
   flex: 1;
   font-family: "Mogra", cursive;

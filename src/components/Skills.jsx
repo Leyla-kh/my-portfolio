@@ -52,6 +52,9 @@ const TextWrapper = styled.div`
   align-items: center;
   gap: 10px;
   max-width: 90%;
+  @media only screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
   @media only screen and (max-width: 576px) {
     margin-top: 10px;
   }
@@ -65,10 +68,11 @@ const TextPart = styled.div`
   position: relative;
   @media only screen and (max-width: 768px) {
     margin-left: 5px;
+    margin-bottom: 10px;
   }
   @media only screen and (max-width: 576px) {
     margin-left: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -117,7 +121,7 @@ const Desc = styled.p`
     font-size: 18px;
   }
   @media only screen and (max-width: 768px) {
-    width: 90%;
+    font-size: 14px;
   }
   @media only screen and (max-width: 576px) {
     font-size: 12px;
@@ -133,6 +137,7 @@ const SkillContainer = styled.div`
   @media only screen and (max-width: 768px) {
   }
   @media only screen and (max-width: 576px) {
+    margin-top: 20px;
   }
 `;
 
